@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Kafka / Zookeeper
+data/kafka/
+data/zookeeper/
+
+# Databases
+data/mssql/
+data/redis/
+data/minio/
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# ML models
+*.pkl
+
+# Env files
+.env
+
+# OS
+.DS_Store
+Thumbs.db
