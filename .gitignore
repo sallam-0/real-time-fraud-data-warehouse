@@ -1,35 +1,55 @@
-# Python
+# ── Secrets & Credentials ──────────────────────────────────
+config/.env
+*.env
+!.env.example
+
+# ── Python ─────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .venv/
 venv/
+*.egg-info/
 
-# Spark
+# ── dbt (only commit source, not deployed artifacts) ──────
+dbt_fraud_dwh/target/
+dbt_fraud_dwh/dbt_packages/
+dbt_fraud_dwh/logs/
+dbt_fraud_dwh/.user.yml
+
+# ── ML models (binary, too large for git) ─────────────────
+ml/models/*.joblib
+ml/models/*.pkl
+streaming/models/
+*.pkl
+
+# ── Data & Runtime ─────────────────────────────────────────
+data/
 spark-warehouse/
 metastore_db/
 derby.log
 
-# Kafka / Zookeeper
-data/kafka/
-data/zookeeper/
-
-# Databases
-data/mssql/
-data/redis/
-data/minio/
-
-# Airflow
+# ── Airflow ────────────────────────────────────────────────
 airflow/logs/
 airflow/plugins/__pycache__/
+pipelines/dags/__pycache__/
 
-# ML models
-*.pkl
+# ── Docker / JARs ─────────────────────────────────────────
+scripts/jars/
 
-# Env files
-.env
-
-# OS
+# ── OS ─────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ── Temp/debug scripts (created during debugging) ────────
+check_ps.py
+check_compose.py
+copy_from_docker.py
+get_mounts.py
+run_docker_debug.py
+_restructure.py
+ps_output.txt
+compose_ps.txt
+ps.txt
