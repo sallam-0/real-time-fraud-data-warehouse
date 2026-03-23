@@ -125,7 +125,7 @@ real-time-fraud-data-warehouse/
 
 The Snowflake data warehouse follows the **Kimball dimensional modeling** methodology, implemented as a snowflake schema. It supports three analytical domains: transaction analytics, fraud detection & ML model performance monitoring, and banking operations (loans, accounts, branches).
 
-[`Detailed Schema`](assets/DWH_schema.docx)
+[`Detailed Schema`](assets/DWH_schema.pdf)
 
 ### Snowflake Schema Overview
 
