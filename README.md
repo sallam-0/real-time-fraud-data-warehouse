@@ -1,6 +1,6 @@
 #  Real-Time Banking Fraud Detection Data Warehouse
 
-> A production-grade, end-to-end real-time fraud detection pipeline built on modern data engineering principles. The system ingests banking transactions via Change Data Capture (CDC), enriches them with customer and account context, scores them with a machine learning model in real time, and lands everything into a Snowflake data warehouse modeled as a Kimball star schema for analytics.
+> A production-grade, end-to-end real-time fraud detection pipeline built on modern data engineering principles. The system ingests banking transactions via Change Data Capture (CDC), enriches them with customer and account context, scores them with a machine learning model in real time, and lands everything into a Snowflake data warehouse modeled as a Kimball snowflake schema for analytics.
 
 ---
 
